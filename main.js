@@ -1,5 +1,5 @@
 // Slut dato for countdown
-let launchDate = new Date("April 29, 2021 23:59:59").getTime();
+let launchDate = new Date("May 14, 2021 12:00:00").getTime();
 
 // Sætter countdown til at skifte hvert sekund
 let timer = setInterval(tick, 1000);
