@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Christian Buono Landing Page</title>
+	
+	<meta name="robots" content="All">
+	<meta name="author" content="Udgiver">
+	<meta name="copyright" content="Information om copyright">
+	
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="text-white">
+<header>
+	<div class="nav">
+		<div class="container my-5 d-flex flex-column flex-sm-row justify-content-between" style="height:100px;">
+			<div class="nav__logo mx-auto mx-sm-0">
+				<img src="img/logo.png" class="img-fluid" alt="christianbuonologo">
+			</div>
+
+			<div class="nav__social d-flex justify-content-center my-4 my-sm-0">
+				<a class="mx-3" href="https://www.facebook.com/ChristianBuonoMusik"><img src="img/facebook.svg" alt="facebook" width="40px"></a>
+				<a class="mx-3" href="https://www.youtube.com/channel/UCoUAE_NhVJ7_WUkwAoZM5vw"><img src="img/youtube.svg" alt="youtube" width="40px"></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="main">
+		<div class="container d-flex flex-column justify-content-center" style="height: calc(100vh - 300px)">
+			<div class="main__header h1 text-off-yellow">New single out</div>
+			<div class="main__countdown h1 fw-bold">00 : 00 : 00 : 00</div>
+			<img class= "mb-2" src="img/line.svg" alt="line" style="width:70%; height:10px;">
+			<div class="main__subheader display-4 fw-normal mt-4">The Heart of the <span class="text-off-yellow fw-bold">Stoics</span></div>
+
+			<div class="main__modal">
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-off-yellow d-flex align-items-center py-2 px-3 my-4 mb-5" data-bs-toggle="modal" data-bs-target="#main__Modal">
+					<span class="mx-1 lead fw-normal">Play</span> <img src="img/play.svg" class="mx-1" alt="play">
+				</button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="main__Modal" tabindex="-1" aria-labelledby="main__modal_title" aria-hidden="true">
+					<div class="modal-dialog modal-xl modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title text-off-black" id="main__modal_title">Heart of the Stoics</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="main__social bottom-0 d-flex justify-content-center">
+			<a class="mx-3" href="https://www.facebook.com/ChristianBuonoMusik"><img src="img/facebook.svg" alt="facebook" width="40px"></a>
+			<a class="mx-3" href="https://www.youtube.com/channel/UCoUAE_NhVJ7_WUkwAoZM5vw"><img src="img/youtube.svg" alt="youtube" width="40px"></a>
+		</div>
+	</div>
+</header>
+
+<script src="main.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
